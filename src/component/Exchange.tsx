@@ -16,7 +16,6 @@ function Exchange() {
     { name: "일본 엔화", currency: "JSY" },
   ];
 
-  //api로 입력해줌
   const [output1, setoutputs1] = useState({ currency: "CAD" });
   const [output2, setoutputs2] = useState({ currency: "KRW" });
 
