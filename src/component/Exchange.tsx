@@ -6,6 +6,13 @@ const Exc = styled.section`
     -webkit-appearance: none;
     margin: 0;
   }
+  .firstPannel,
+  .secondPannel {
+    border-radius: 30px;
+  }
+  .secondPannel {
+    margin-top: 1vw;
+  }
 `;
 function Exchange() {
   const contry = [
@@ -95,7 +102,7 @@ function Exchange() {
   };
   return (
     <Exc>
-      <div>
+      <div className="firstPannel">
         <input
           id="input1"
           value={inputValue1}
@@ -111,7 +118,7 @@ function Exchange() {
           ))}
         </select>
       </div>
-      <div>
+      <div className="secondPannel">
         <input
           id="input2"
           type="number"
